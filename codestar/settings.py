@@ -33,8 +33,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-zeststudio-djangoblog-71tkp6cmxsq.ws-eu105.gitpod.io',
-    'django-blog-ci.herokuapp.com',
-    'localhost'
+    'localhost',
+    os.environ.get('HEROKU_HOSTNAME')
 ]
 
 
